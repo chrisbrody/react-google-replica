@@ -37,3 +37,24 @@ div#bottom {
         }
     }
 }
+
+@media(max-width:550px) {
+	div#bottom {
+        ul {
+            &.left {
+                padding-left: 10px;
+            }
+            &.right {
+                padding: 0 ;
+            }
+
+            li {
+                a {
+                    margin: 5px;
+                }
+            }
+        }
+    } 
+
+	
+}

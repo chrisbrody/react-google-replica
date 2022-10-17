@@ -6,16 +6,19 @@ div#top {
         margin: 0 25px;
 
         li {
-            display:inline-block;
-            padding-top:10px;
-            padding-right:15px;
-            font-size:13px;
+            list-style: none;
+            display: inline-block;
+            text-align: right;
+            padding: 5px 10px 0 0;
+            margin: 5px 5px 0 0;
+            font-size: 13px;
         }
 
         div.fa {
             font-size: 20px;
             vertical-align: top;
             opacity: 0.7;
+            cursor: default;
 
             &:hover {
                 opacity: 1.0;
@@ -37,6 +40,26 @@ div#top {
             border-radius: 25px;
             position: relative;
             top: 10px;
+            height: 32px;
+            width: 32px;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    div#top {
+        
+        margin: 0;
+
+        ul.right {
+            float: none;
+            margin: 0 auto;
+            padding-left: 0;
+            width: 90%;
+
+            li {
+                margin: 0;
+            }
         }
     }
 }

@@ -1,14 +1,33 @@
-/*selects body tag*/
-body {
-  color: #222222;
-  margin:0;
+/*Sitewide Styles*/
+/*select all things - seriously use this one very wisely*/
+* {
+	/*change the default color of all elements to black*/
+	color: #000;
 }
-/*select any anchor tag*/
+/*select the body tag*/
+body {
+	background: none repeat scroll 0 0 #fff;
+	/*change the text color to light blackish*/
+	color: #222222;
+	/*set default margin to 0 - becuase every browser has a different default*/
+	margin:0;
+}
+/*select all anchor tags*/
 a {
+	/*change the text color to light blackish*/
 	color:#222222;
+	/*remove default underline*/
 	text-decoration: none;
 }
-/*select anchor tag when a user is hovering on them*/
+/*select all anchor tags that are hovered on*/
 a:hover {
+	/*change color on hover*/
+	color: #222222;
+	/*add underline when user hovers*/
 	text-decoration: underline;
+}
+/*select all anchor tags that have a class of button and are hovered on*/
+a.button:hover {
+	/*remove underline from hovered on buttons*/
+	text-decoration: none;
 }
