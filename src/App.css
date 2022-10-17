@@ -1,0 +1,14 @@
+/*selects body tag*/
+body {
+  color: #222222;
+  margin:0;
+}
+/*select any anchor tag*/
+a {
+	color:#222222;
+	text-decoration: none;
+}
+/*select anchor tag when a user is hovering on them*/
+a:hover {
+	text-decoration: underline;
+}
